@@ -1,0 +1,482 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+  font-family: 'Plain', sans-serif;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+p {
+  color: #666262;
+  font-size: 18px;
+  font-weight:300;
+  line-height: 1.5em;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 100;
+  line-height: normal;
+}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 0;
+}
+h6 {
+  color: #909090;
+  font-size:  22px;
+  line-height: inherit;
+  margin: 0;
+  font-weight:100;
+  
+}
+b, 
+strong {
+  font-weight: bold;
+  letter-spacing: 0;
+}
+a{
+  font-weight: normal;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #404040;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #f13a11;
+  outline: none;
+  text-decoration: none;
+}
+
+section {
+  padding: 7rem 0;
+}
+
+
+
+.nav-item .nav-link.active, .nav-item .nav-link:hover {
+  color: #f13a11;
+}
+
+.btn{
+  background:transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  padding: 14px 24px;
+  border-radius:small;
+
+}
+.btn:hover{
+  color:#f13a11 ;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.bordered {
+  border: 1px solid #f13a11;
+  color: #f13a11;
+}
+.btn.bordered:hover,
+.btn.bordered:focus,
+.btn.bg-color:hover,
+.btn.bg-color:focus{
+  background: white;
+  border-color: transparent;
+  color: #f13a11;
+}
+.bg-color {
+  background: #f13a11;
+  color: white
+}
+/*---------------------------------------
+     MODAL              
+  -----------------------------------------*/
+
+  .modal-content {
+    padding: 2rem 3rem;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    border: 0;
+    padding: 0;
+  }
+
+  .membership-form a {
+    color: #f13a11;
+  }
+
+
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+/* navbar */
+.navbar{
+  background-color: #171819;
+  padding: 1rem;
+  
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.navbar .navbar-brand{
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: normal;
+  padding-top: 0;
+}
+.nav-item .nav-link{
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 2px 6px;
+}
+.nav-item .nav-link:active,
+.nav-item .nav-link:hover{
+  color: #f13a11;
+}
+
+.navbar .social-icon li a {
+  color: white;
+}
+
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon li a {
+  text-decoration: none;
+   
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 8px;
+  text-align: center;
+}
+
+.social-icon li:hover a{
+  color: #f13a11;
+}
+
+/* toggle  */
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: #f13a11;
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: #f13a11;
+  width: 30px;
+  height: 2px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* toggle end */
+
+/* hero */
+.hero{
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height:100vh;
+  vertical-align: middle;
+  position: relative;
+
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #171819;
+  opacity: .85;
+}
+.items .hero-text h6 {
+  color: #909090;
+  font-size:  22px;
+  line-height: inherit;
+  margin: 0;
+  font-weight:100;
+  
+}
+
+
+/* feautre */
+.feature {
+  background: #171819;
+  padding: 5rem 0;
+}
+
+
+.about-working-hours {
+  border-left: 2px solid;
+  padding-left: 3.5rem;
+}
+
+.about-working-hours strong {
+  opacity: 0.85;
+}
+
+/* about */
+.about {
+  background: #f9f9f9;
+}
+.team-thumb {
+  position: relative;
+}
+.team-info {
+  background: white;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 6px 0 38px rgba(20,20,20,0.10);
+  padding: 20px;
+  position: relative;
+}
+.team-info span {
+  font-weight: 100;
+  opacity: 0.85;
+}
+.team-info .social-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.team-info .social-icon li {
+  display: block;
+  
+}
+.team-info .social-icon li a {
+  color:#909090;
+}
+
+.team-info .social-icon li a:hover {
+  color:#f13a11;
+}
+/* class */
+
+.class-info {
+  background: white;
+  box-shadow: 6px 0 38px rgba(20,20,20,0.10);
+  border-radius: 0 0 2px 2px;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.class-info img {
+  border-radius: 2px 2px 0 0;
+}
+.class-info strong {
+  color: #909090;
+}
+.class-price {
+  background: #f13a11;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 60px;
+  text-align: center;
+}
+/* schedule */
+
+.schedule {
+  background:#171819;
+}
+.schedule-table {
+  display: table;
+  border: 0;
+  text-align: center;
+}
+.schedule-table strong,
+.schedule-table span {
+  display: block;
+  text-align: center;
+}
+.schedule-table strong {
+  color: white;
+}
+.schedule-table span {
+  color: #909090;
+}
+.schedule-table span,
+.schedule-table small {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.schedule-table small {
+  position: relative;
+  top: 10px;
+}
+.table .thead-light th,
+.schedule-table tr td:first-child {
+  background:  #f13a11;
+  border: 1px solid #212122;
+  color: white;
+}
+  .schedule-table .thead-light th {
+  border-bottom: 0;
+  text-transform: uppercase;
+}
+.table-bordered td, 
+.table-bordered th {
+  border: 1px solid #212122;
+}
+.table-bordered td {
+  padding-bottom: 22px;
+}
+
+.table td, .table th {
+  padding: 1rem;
+}
+
+
+/* contact */
+
+
+.form-control {
+  border-radius: 5px;
+  margin: 1.3rem 0;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color:#171819;
+}
+.webform input,
+button#submit-button {
+  height: calc(2.25rem + 20px);
+}
+button#submit-button {
+  background:#171819;
+  border-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button#submit-button:hover {
+  
+  background: #f13a11;
+}
+
+.contact h2 + p {
+  max-width: 90%;
+}
+.google-map {
+  border-top: 1px solid #efebeb;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+}
+.google-map iframe {
+  width: 100%;
+}
+.contact i{
+  color:#f13a11;
+}
+
+
+footer{
+
+  border-top: 1px solid #efebeb;
+  padding: 3rem 0;
+}
+footer a {
+  color: #909090;
+  font-weight: 100;
+}
+footer p {
+  font-size: 16px;
+}
+
+footer i{
+  color:#f13a11;
+}
